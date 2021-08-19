@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.main_section{
+  /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2021/01/25/22/08/alarm-clock-5949791__340.jpg)no-repeat center center/cover;
+}
+
+.app_name{
+  border-bottom: 0.5px solid gray;
+    margin: 0;
+    padding: 10px 0;
+    width: 22.3em;
+    text-align: center;
+    background-color: rgb(255 247 96 / 47%);
+    border-radius: 12px;
+    font-family: serif;
+    color: #68671e;
+}
+
+.reminder_container{
+  padding: 15px 10px;
+    border-radius: 12px;
+    border-top: 0.5px solid gray;
+    width: 32em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 247 96 / 30%);
+}
+
+.guideInfo{
+  margin: 7px 0;
+    font-size: 14px;
+    color: #df1a1a;
+    font-family: serif;
+}
+
+.react-calendar{
+  background: none;
+}
+
+.btn{
+  display: block;
+    width: 25em;
+    margin: 10px 0;
+    padding: 4px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: emoji;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.add_btn{
+  background-color: #a09f2e;
+}
+.add_btn:hover{
+  background-color: #b4b33c;
+}
+.show_btn{
+  background-color: #eaea86;
+}
+.show_btn:hover{
+  background-color: #dfdf78;
+}
+
+.add_container>input{
+  display: block;
+    width: 25em;
+    margin: 10px 0;
+    padding: 4px 0;
+    text-align: center;
+    font-family: emoji;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2.5px solid black;
+    border-top: 1px solid black;
+    background: none;
+    font-size: 14px;
+}
+
+.backbtn{
+  text-align: center;
+    margin: 0px 0;
+    font-family: emoji;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.backbtn:hover{
+  cursor: pointer;
+  color: #373636;
+}
+
+@media only screen and (max-width:345px){
+  .react-calendar{
+    width: 15em;
+  }
+  .reminder_container{
+    width: 16em;
+  }  
+  .btn{
+    width: 17em;
+  }
+  .app_name{
+    width: 11.6em;
+  }
+}
+@media only screen and (max-width:573px) and (min-width:345px){
+  .react-calendar{
+    width: 16em;
+  }
+  .reminder_container{
+    width: 19em;
+  }  
+  .btn{
+    width: 18.5em;
+  }
+  .app_name{
+    width: 13.6em;
+  }
+}
